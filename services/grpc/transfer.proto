@@ -1,0 +1,11 @@
+syntax = "proto3";
+package transfer;
+
+service Transfer {
+  rpc Upload (stream Chunk) returns (Ack);
+  rpc Download (FileReq) returns (stream Chunk);
+}
+
+message FileReq { string name = 1; int32 repeat = 2; }
+message Chunk { bytes data = 1; }
+message Ack { bool ok = 1; string msg = 2; int64 bytes_received = 3; }

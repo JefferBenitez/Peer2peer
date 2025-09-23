@@ -1,0 +1,34 @@
+{
+  "name": "peer2peer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "peer1": "cross-env CONFIG_PATH=peer/config/peer1.json node peer/start.js",
+    "peer2": "cross-env CONFIG_PATH=peer/config/peer2.json node peer/start.js",
+    "peer3": "cross-env CONFIG_PATH=peer/config/peer3.json node peer/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JefferBenitez/Peer2peer.git"
+  },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JefferBenitez/Peer2peer/issues"
+  },
+  "homepage": "https://github.com/JefferBenitez/Peer2peer#readme",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.0",
+    "@grpc/proto-loader": "^0.8.0",
+    "body-parser": "^2.2.0",
+    "cross-env": "^10.0.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}

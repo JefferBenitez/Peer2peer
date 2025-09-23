@@ -1,0 +1,9 @@
+{
+  "listen_ip": "127.0.0.1",
+  "rest_port": 8083,
+  "grpc_port": 50053,
+  "share_dir": "peer/data/peer3",
+  "friend_primary": "http://localhost:8081",
+  "friend_backup": "http://localhost:8082",
+  "friends_index": ["http://localhost:8081", "http://localhost:8082"]
+}
