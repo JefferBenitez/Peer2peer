@@ -1,3 +1,5 @@
+// Arranca un peer: levanta los microservicios REST y gRPC leyendo puertos, rutas y amigos desde CONFIG_PATH.
+
 import fs from "fs";
 import { startGrpcServer } from "../services/grpc/server.js";
 import { startRestServer } from "../services/rest/server.js";

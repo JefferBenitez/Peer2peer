@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "peer1": "cross-env CONFIG_PATH=peer/config/peer1.json node peer/start.js",
     "peer2": "cross-env CONFIG_PATH=peer/config/peer2.json node peer/start.js",
-    "peer3": "cross-env CONFIG_PATH=peer/config/peer3.json node peer/start.js"
+    "peer3": "cross-env CONFIG_PATH=peer/config/peer3.json node peer/start.js",
+    "test:grpc": "node test/grpc_client.js"
   },
   "repository": {
     "type": "git",
